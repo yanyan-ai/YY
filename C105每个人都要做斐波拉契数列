@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a, b, c,n, f=1;
+	int i,j;
+	scanf("%d", &n);
+	for(i=0;i<n;i++){
+		scanf("%d", &a);
+		int b = 0, c = 0, f = 1;
+		for (j = 2; j <= a; j++) {
+			b = f;
+			f = f + c;
+			c = b;
+		}
+		printf("%d\n", f);
+	}
+	return 0;
+}
