@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	long int x,y,z;
+	printf("请输入步数：");
+	scanf("%d", &x);
+	y = x % 7;
+	z = y + 1;
+	printf("落在%d号格子里\n", z);
+	return 0;
+}
