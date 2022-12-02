@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n, i, b=1;
+	float f=0,a;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		a = 1.0 / b;
+		f = f + a;
+		b = b + 1;
+	}
+	printf("%.2f", f);
+	return 0;
+}
