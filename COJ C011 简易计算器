@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+	char a;
+	int x, y,z;
+	scanf("%d %c %d", &x, &a, &y);
+	if (a == '+') {
+		z = x + y;
+		printf("%d", z);
+	}
+	else
+		if (a == '-') {
+			z = x - y;
+			printf("%d", z);
+		}
+		else
+			if (a == '*') {
+				z = x * y;
+				printf("%d", z);
+			}
+			else
+				if (a == '/' && y != 0) {
+					z = x / y;
+					printf("%d", z);
+				}
+				else
+					printf("Divided By Zero.");
+	return 0;
+}
