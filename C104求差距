@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n,a,b,mi=100,ma=0;
+	int i;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i ++ ) {
+		scanf("%d", &a);
+		if (a >= ma)
+			ma = a;
+		else if (a <= mi)
+			mi = a;
+	}
+	b = ma - mi;
+	printf("%d", b);
+	return 0;
+}
